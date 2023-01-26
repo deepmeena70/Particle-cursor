@@ -3,6 +3,7 @@ const ctx = canvas.getContext('2d');
 const toRadians = (degrees) => (degrees * Math.PI) / 180;
 let particles = [];
 
+// particle tracing circle
 class Particle {
   constructor(x, y, deg) {
     this.x = x;
