@@ -1,0 +1,49 @@
+$text-color: white;
+$background: black;
+$link-hover: lightsalmon;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $background;
+  color: $text-color;
+  width: 100vw;
+  height: 100vh;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6.5rem;
+}
+
+.link-container{
+  position:absolute;
+  bottom:7vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.7rem;
+  display: flex;
+  a{
+    text-decoration: none;
+    color: $text-color;
+    padding: 1.4rem;;
+    &:hover{
+      color: $link-hover;
+    }
+  }
+}
+
+#canvas{
+  z-index: -99;
+}
+
+#mouse-tracker{
+  position: absolute;
+}

@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6.5rem;
+}
+
+.link-container {
+  position: absolute;
+  bottom: 7vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.7rem;
+  display: flex;
+}
+.link-container a {
+  text-decoration: none;
+  color: white;
+  padding: 1.4rem;
+}
+.link-container a:hover {
+  color: lightsalmon;
+}
+
+#canvas {
+  z-index: -99;
+}
+
+#mouse-tracker {
+  position: absolute;
+}/*# sourceMappingURL=style.css.map */
