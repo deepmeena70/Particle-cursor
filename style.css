@@ -1,45 +1,38 @@
-* {
+body,
+html,
+#app {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
 }
 
-body {
-  background: black;
-  color: white;
-  width: 100vw;
-  height: 100vh;
+#app {
+  overflow: hidden;
+  touch-action: pan-up;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
 }
-
-.text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 6.5rem;
+#app h1 {
+  width: auto;
+  height: 160px;
+  line-height: 80px;
+  margin: calc(50vh - 80px) auto 0;
+  font-size: 60px;
 }
-
-.link-container {
-  position: absolute;
-  bottom: 7vh;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 1.7rem;
-  display: flex;
-}
-.link-container a {
+#app a {
+  margin-top: 10px;
+  display: inline-block;
   text-decoration: none;
-  color: white;
-  padding: 1.4rem;
+  color: #fff;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 2rem;
 }
-.link-container a:hover {
-  color: lightsalmon;
-}
-
-#canvas {
-  z-index: -99;
-}
-
-#mouse-tracker {
-  position: absolute;
+#app canvas {
+  display: block;
+  position: fixed;
+  z-index: -1;
+  top: 0;
 }/*# sourceMappingURL=style.css.map */
